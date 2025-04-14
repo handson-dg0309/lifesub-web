@@ -19,7 +19,7 @@ podTemplate(
     volumes: [
         emptyDirVolume(mountPath: '/root/.azure', memory: false),
         emptyDirVolume(mountPath: '/opt/sonar-scanner/.sonar/cache', memory: false)
-     ]
+    ]
 ) {
     node(PIPELINE_ID) {
         def props
